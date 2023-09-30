@@ -1,0 +1,48 @@
+.navbar {
+    font-size: 30px;
+    margin-left: auto;
+    flex-wrap: wrap; 
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: aqua;
+    display:flex;
+    align-items: center;
+
+    padding: 20px;
+}
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header li{
+    display: inline;
+    padding: 30px;
+}
+
+header li a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+main {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
