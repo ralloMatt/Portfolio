@@ -4,6 +4,11 @@
     flex-wrap: wrap; 
 }
 
+.headIcon {
+    padding-left: 20px;
+    width: 50px;
+}
+
 .contactInfo {
     display: flex;
     justify-content: center;
