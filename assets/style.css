@@ -1,53 +1,72 @@
+/* Classes */
 .navbar {
-    font-size: 30px;
-    margin-left: auto;
-    flex-wrap: wrap; 
+    font-size: 30px; /* Increase font size of nav bar links */
+    margin-left: auto; /* Send nav bar links to right of page */
 }
 
-.headIcon {
+.headIcon { /* Change size of icon image next to name. Also add space around icon */
     padding-left: 20px;
     width: 50px;
 }
 
-.contactInfo {
-    display: flex;
+.contactInfo { /* Changes information on footer into flexbox and posistions nicely */
+    display: flex; 
     justify-content: center;
     gap: 50px;
     align-items: center;
     flex-wrap: wrap;
 }
 
-header {
-    background-color: aqua;
-    display:flex;
-    align-items: center;
+/* Project Card Classes */
+.projectFlexRow{  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 5px solid black;
+    gap: 50px;
+}
 
+.projectFlexItem {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid gold;
     padding: 20px;
 }
-header h1 {
-    display: inline-block;
+
+.makeMeBig {
+    flex-grow: 100;
+}
+
+/* Element Selectors */
+header {  /* Defines header as a flexbox and positions nicely */
+    background-color: aqua;
+    display:flex;
+    align-items: center; /* Center items */
+    padding: 20px;
+}
+header h1 { /* Makes my name a big font size */ 
     font-size: 48px;
 }
 
 header ul {
-    list-style-type: none;
+    list-style-type: none; /* Do not show bullet points on list */
 }
 
-header li{
-    display: inline;
-    padding: 30px;
+header li{ 
+    display: inline; /* Makes list elements all on one line */
+    padding: 30px; /* Adds space between list elements */ 
 }
 
 header li a {
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: 14px 16px; /* Add a little padding on navbar links */
+    text-decoration: none; /* Do not show underline on links */ 
   }
 
 main {
-    text-align: center;
+    text-align: center; /* Center all items on main elements */
 }
 
 footer {
-    text-align: center;
+    text-align: center; /* Center all items on footer elements */
 }
