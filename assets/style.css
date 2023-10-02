@@ -1,3 +1,9 @@
+:root { /*CSS Variables */
+    --columnHeaderFontSize: 35px;
+    --descriptionFontSize: 20px;
+    --borderStyle: 5px solid rgb(97, 87, 87);
+}
+
 /* Classes */
 .navbar {
     font-size: 30px; /* Increase font size of nav bar links */
@@ -9,6 +15,15 @@
     width: 50px;
 }
 
+.subtext { /*text under Projects column */
+    font-size: var(--descriptionFontSize);
+}
+
+.headerImg { /* Header image for webpage */
+    background-image: url(./images/header.jpg);
+    width:100%;
+    height:250px;
+}
 .contactInfo { /* Changes information on footer into flexbox and posistions nicely */
     display: flex; 
     justify-content: center;
@@ -16,7 +31,6 @@
     align-items: center;
     flex-wrap: wrap;
 }
-
 /* Flex Box Stuffs */
 
 .flexRow { /* Creates Flexbox Row */
@@ -33,7 +47,8 @@
 }
 
 .flexBigItem { /* Distributes spacing for bigger elements in row */
-    flex: 0 0 80%;
+    flex: 0 0 75%;
+    border-left: var(--borderStyle);
 }
 
 
@@ -48,12 +63,12 @@
     gap: 50px;
 }
 
-
-
 /* End of Project Card Classes */
 
-
 /* Element Selectors */
+body{
+    background-color: lightgray;
+}
 header {  /* Defines header as a flexbox and positions nicely */
     background-color: aqua;
     display:flex;
@@ -73,8 +88,7 @@ header li{
     padding: 30px; /* Adds space between list elements */ 
 }
 
-header li a {
-    padding: 14px 16px; /* Add a little padding on navbar links */
+a {
     text-decoration: none; /* Do not show underline on links */ 
   }
 
@@ -82,8 +96,20 @@ main {
     text-align: center; /* Center all items on main elements */
 }
 
+main h1 {
+    font-size: var(--columnHeaderFontSize);
+}
+
+main p{
+    font-size: var(--descriptionFontSize);
+}
 footer {
     text-align: center; /* Center all items on footer elements */
+    padding-top: 20px;
+}
+
+footer h1{
+    font-size: var(--columnHeaderFontSize);
 }
 
 /* Psudo Selectors */
@@ -98,4 +124,38 @@ footer {
 
 .projectFlexItem:first-child{ /* This is for my main project card */
     flex: 0 0 86%; /* Take up 86 % of space because this is my main card */
+}
+
+/*Media Queries */
+
+@media screen and (max-width: 768px) {  
+    header li{
+        display: block; /* Makes list elements on multiple lines */
+        padding: 15px;
+    }
+    .contactInfo{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 992px) { /* When screen is smaller */
+    .flexRow {   /* Change the rows into columns for nice fitting */
+        flex-direction: column;
+    }
+    .flexBigItem { /* Change separator to top */
+        border-left: none;
+        border-top: var(--borderStyle);
+        padding-top: 10px;
+    }
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar {
+        margin-right: auto;
+    }
+    .projectFlexItem{
+        width: 380px;
+    }
 }
