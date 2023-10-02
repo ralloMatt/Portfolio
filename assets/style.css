@@ -39,29 +39,18 @@
 
 /* Project Card Classes */
 
-
-/*
-.projectFlexRow{  
+.projectFlexItem { /* All small project card flex items */ 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     border: 5px solid black;
+    padding: 20px;
+    margin: 20px;
     gap: 50px;
 }
 
-.projectFlexItem {
-    display: flex;
-    flex-direction: column;
-    border: 5px solid gold;
-    padding: 20px;
-}
 
-.makeMeBig {
-    flex-grow: 100;
-}
 
-*/ 
+/* End of Project Card Classes */
 
 
 /* Element Selectors */
@@ -95,4 +84,18 @@ main {
 
 footer {
     text-align: center; /* Center all items on footer elements */
+}
+
+/* Psudo Selectors */
+.projectFlexItem:nth-child(odd){ /*Used so I can have two cards side by side for the smaller cards*/
+    flex: 0 0 40%; /* Take up 40 % of space for smaller cards*/
+
+}
+
+.projectFlexItem:nth-child(even){ /*Used so I can have two cards side by side for the smaller cards*/
+    flex: 0 0 40%; /* Take up 40 % of space for smaller cards*/
+}
+
+.projectFlexItem:first-child{ /* This is for my main project card */
+    flex: 0 0 86%; /* Take up 86 % of space because this is my main card */
 }
