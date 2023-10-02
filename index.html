@@ -27,67 +27,76 @@
     </header>
 
     <main>
-        <section>
-            <h1 id="about-me">About Me</h1>
-            <p>My name is Matthew Rallo. I am doing a coding bootcamp and learning HTML, CSS, Javascript, and more. By the end of this bootcamp I will build a full stack web application.</p>
+        <!-- Flex Row of About Me section -->
+        <section class="flexRow"> 
+            <h1 id="about-me" class="flexSmallItem">About Me</h1>
+            <p class="flexBigItem">My name is Matthew Rallo. I am doing a coding bootcamp and learning HTML, CSS, Javascript, and more. By the end of this bootcamp I will build a full stack web application.</p>
         </section>
 
-        <h1 id="projects">Projects</h1>
-        <p>Click on any project to be redirected to a deployed application.</p> 
-
-
-
-        <!-- Main Project Card-->
-        <section class="projectFlexItem makeMeBig"> 
-            <section>
-                <h2>Code Refractor</h2>
-                <p>HTML, CSS</p>
+        <!-- Flex Row of Projects Section -->
+        <section class="flexRow">
+            <section class="flexSmallItem">
+                <h1 id="projects">Projects</h1>
+                <p>Click on any project to be redirected to a deployed application.</p> 
             </section>
+        
+            <!-- All my Project Cards-->
+            <section class="flexBigItem">
+                <section class="projectFlexItem makeMeBig"> 
+                    <section>
+                        <h2>Code Refractor</h2>
+                        <p>HTML, CSS</p>
+                    </section>
+                </section>
+
+                <section class="projectFlexRow"> <!-- FLEX BOX ROW -->
+                    <section class="projectFlexItem"> <!-- BIG FLEX BOX ITEM -->
+                        <section>
+                            <h2>First Box</h2>
+                            <p>HTML, CSS</p>
+                        </section>
+                    </section>
+
+                    <section class="projectFlexItem"> <!-- FLEX BOX ITEM -->
+                        <section>
+                            <h2>Second Box</h2>
+                            <p>Info here</p>
+                        </section>
+                    </section>
+
+                    <section class="projectFlexItem"> <!-- FLEX BOX ITEM -->
+                        <section>
+                            <h2>Third Box</h2>
+                            <p>Info here</p>
+                        </section>
+                    </section>
+
+                    <section class="projectFlexItem"> <!-- FLEX BOX ITEM -->
+                        <section>
+                            <h2>Fourth Box</h2>
+                            <p>Info here</p>
+                        </section>
+                    </section>
+
+
+
+                </section>
+            </section> <!-- End of Project Cards-->
         </section>
-
-        <section class="projectFlexRow"> <!-- FLEX BOX ROW -->
-            <section class="projectFlexItem"> <!-- BIG FLEX BOX ITEM -->
-                <section>
-                    <h2>First Box</h2>
-                    <p>HTML, CSS</p>
-                </section>
-            </section>
-
-            <section class="projectFlexItem"> <!-- FLEX BOX ITEM -->
-                <section>
-                    <h2>Second Box</h2>
-                    <p>Info here</p>
-                </section>
-            </section>
-
-            <section class="projectFlexItem"> <!-- FLEX BOX ITEM -->
-                <section>
-                    <h2>Third Box</h2>
-                    <p>Info here</p>
-                </section>
-            </section>
-
-            <section class="projectFlexItem"> <!-- FLEX BOX ITEM -->
-                <section>
-                    <h2>Fourth Box</h2>
-                    <p>Info here</p>
-                </section>
-            </section>
-
-
-
-        </section>
-
     </main>
 
     <footer>
-      <h1 id="contact">Contact Information</h1>
-      <section class="contactInfo">
-        <h2>314-585-6696</h2>
-        <h2>mattrallo2012@gmail.com</h2>
-        <a href="">Github</a>
-        <a href="">Linkedin</a>
-      </section>
+        <section class="flexRow"> 
+            <section class="flexSmallItem">
+                 <h1 id="contact">Contact Information</h1>
+            </section>
+            <section class="contactInfo flexBigItem">
+                <h2>314-585-6696</h2>
+                <h2>mattrallo2012@gmail.com</h2>
+                <a href="">Github</a>
+                <a href="">Linkedin</a>
+            </section>
+        </section>
     </footer>
   </body>
 </html>
