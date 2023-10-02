@@ -17,7 +17,30 @@
     flex-wrap: wrap;
 }
 
+/* Flex Box Stuffs */
+
+.flexRow { /* Creates Flexbox Row */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Next two classes makes columns for webpage */
+.flexSmallItem { /* Distributes spacing for smaller elements in row */
+    flex: 0 0 20%;
+}
+
+.flexBigItem { /* Distributes spacing for bigger elements in row */
+    flex: 0 0 80%;
+}
+
+
 /* Project Card Classes */
+
+
+/*
 .projectFlexRow{  
     display: flex;
     flex-direction: row;
@@ -37,6 +60,9 @@
 .makeMeBig {
     flex-grow: 100;
 }
+
+*/ 
+
 
 /* Element Selectors */
 header {  /* Defines header as a flexbox and positions nicely */
