@@ -2,6 +2,8 @@
     --columnHeaderFontSize: 35px;
     --descriptionFontSize: 20px;
     --borderStyle: 5px solid rgb(97, 87, 87);
+    --projectImgSize: 500px;
+    --projectCardHeaderColor: lightblue;
 }
 
 /* Classes */
@@ -61,6 +63,26 @@
     padding: 20px;
     margin: 20px;
     gap: 50px;
+} 
+
+.projectCardHeader { /* Positions each project card header nicely */
+    position: relative;
+    margin: 17rem 0 1.5rem 0;
+    background-color: var(--projectCardHeaderColor);
+    border-radius: 15px;
+}
+
+/* Background image of each project (flex box) so I can have each project have an image of said project */
+.projectImgMain { /* My main project card. The eye catcher */
+    background-image: url('./images/horiseonCode.png');
+    width: var(--projectImgSize);
+    height: var(--projectImgSize);
+}
+
+.projectImgOne { /* My first side project card. */
+    background-image: url('./images/myFirstWebsite.png');
+    width: var(--projectImgSize);
+    height: var(--projectImgSize);
 }
 
 /* End of Project Card Classes */
@@ -112,14 +134,19 @@ footer h1{
     font-size: var(--columnHeaderFontSize);
 }
 
+section { /* Used for Project Card Pictures (backgrounds) so I do have to redefine */
+    background-size: cover;
+}
+
 /* Psudo Selectors */
 .projectFlexItem:nth-child(odd){ /*Used so I can have two cards side by side for the smaller cards*/
     flex: 0 0 40%; /* Take up 40 % of space for smaller cards*/
-
+    height: 40vh; /*Height of each projec card */
 }
 
 .projectFlexItem:nth-child(even){ /*Used so I can have two cards side by side for the smaller cards*/
     flex: 0 0 40%; /* Take up 40 % of space for smaller cards*/
+    height: 40vh; /*Height of each projec card */
 }
 
 .projectFlexItem:first-child{ /* This is for my main project card */
