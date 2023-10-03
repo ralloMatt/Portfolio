@@ -1,9 +1,10 @@
 :root { /*CSS Variables */
     --columnHeaderFontSize: 35px;
     --descriptionFontSize: 20px;
-    --borderStyle: 5px solid rgb(97, 87, 87);
+    --borderStyle: 5px solid black;
     --projectImgSize: 500px;
     --projectCardHeaderColor: lightblue;
+    --linkHoverColor: white;
 }
 
 /* Classes */
@@ -25,6 +26,8 @@
     background-image: url(./images/header.jpg);
     width:100%;
     height:250px;
+    border-radius: 0 0 20px 20px;
+
 }
 .contactInfo { /* Changes information on footer into flexbox and posistions nicely */
     display: flex; 
@@ -56,22 +59,23 @@
 
 /* Project Card Classes */
 
-.projectFlexItem { /* All small project card flex items */ 
+.projectFlexItem { /* All project card flex items */ 
     display: flex;
     flex-direction: column;
-    border: 5px solid black;
+    border: 3px solid black;
+    border-radius: 15px;
     padding: 20px;
     margin: 20px;
     gap: 50px;
 } 
 
-.projectCardHeader { /* Positions each project card header nicely */
+.projectCardHeader { /* Positions each project card header nicely. Also some styling */
     position: relative;
-    margin: 17rem 0 1.5rem 0;
+    margin: 13rem 0 1.5rem 0;
     padding: 1px;
-
     background-color: var(--projectCardHeaderColor);
     border-radius: 15px;
+    opacity: 0.9;
 }
 
 /* Background image of each project (flex box) so I can have each project have an image of said project */
@@ -108,10 +112,12 @@
 
 /* Element Selectors */
 body{
-    background-color: lightgray;
+    background: linear-gradient(rgb(20, 95, 141), rgb(68, 126, 162), rgb(103, 159, 184), rgb(137, 193, 205), rgb(170, 229, 227)); /*background color */
 }
+    
 header {  /* Defines header as a flexbox and positions nicely */
-    background-color: aqua;
+    background: linear-gradient(rgb(184, 243, 226), rgb(167, 225, 226), rgb(149, 207, 226), rgb(130, 190, 226), rgb(108, 173, 226));
+    border-radius: 20px 20px 0 0;
     display:flex;
     align-items: center; /* Center items */
     padding: 20px;
@@ -172,12 +178,22 @@ section { /* Used for Project Card Pictures (backgrounds) so I do have to redefi
     flex: 0 0 86%; /* Take up 86 % of space because this is my main card */
 }
 
-.projectFlexItem:hover { /*Change cursor to hand (pointer) when hovers over project cards */
-    cursor: pointer;
+.projectFlexItem:hover { 
+    cursor: pointer; /*Change cursor to hand (pointer) when hovers over project cards */
+    box-shadow: inset 0px 0px 8px cyan, 0 0 15px rgb(16, 16, 124); /*Give each card a shadow on hover */
 }
 
 a:visited { /* Do not show color as purple after link is clicked */
     color: black;
+}
+
+/* Change links to certain color on hover in header and footer */
+header a:hover {
+    color: var(--linkHoverColor);
+}
+
+footer a:hover{
+    color: var(--linkHoverColor);
 }
 /*Media Queries */
 @media screen and (max-width: 768px) {  
