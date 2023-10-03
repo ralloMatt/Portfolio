@@ -68,6 +68,8 @@
 .projectCardHeader { /* Positions each project card header nicely */
     position: relative;
     margin: 17rem 0 1.5rem 0;
+    padding: 1px;
+
     background-color: var(--projectCardHeaderColor);
     border-radius: 15px;
 }
@@ -85,6 +87,23 @@
     height: var(--projectImgSize);
 }
 
+.projectImgTwo { /* My side project card. */
+    background-image: url('./images/minesweeper.png');
+    width: var(--projectImgSize);
+    height: var(--projectImgSize);
+}
+
+.projectImgThree { /* My side project card. */
+    background-image: url('./images/strangeGame.PNG');
+    width: var(--projectImgSize);
+    height: var(--projectImgSize);
+}
+
+.projectImgFour { /* My side project card. */
+    background-image: url('./images/calculator.jpg');
+    width: var(--projectImgSize);
+    height: var(--projectImgSize);
+}
 /* End of Project Card Classes */
 
 /* Element Selectors */
@@ -153,8 +172,14 @@ section { /* Used for Project Card Pictures (backgrounds) so I do have to redefi
     flex: 0 0 86%; /* Take up 86 % of space because this is my main card */
 }
 
-/*Media Queries */
+.projectFlexItem:hover { /*Change cursor to hand (pointer) when hovers over project cards */
+    cursor: pointer;
+}
 
+a:visited { /* Do not show color as purple after link is clicked */
+    color: black;
+}
+/*Media Queries */
 @media screen and (max-width: 768px) {  
     header li{
         display: block; /* Makes list elements on multiple lines */
