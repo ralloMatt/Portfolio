@@ -6,6 +6,10 @@ This is a website to showcase my skills. I coded in html and css to show some pr
 
 The projects on the site are ones I actually coded. Click on a project to be redirected to a deployed application or a video. When you move cursor over projects, a glow effect happens.
 
+## Website URL
+
+https://rallomatt.github.io/Portfolio/
+
 ## Screenshot
 
 ![alt text](assets/images/screenshot.png)
