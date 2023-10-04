@@ -10,7 +10,7 @@
   <body>
     <header>
         <h1>Matthew Rallo</h1>
-        <img class="headIcon" src="./assets/images/dogIcon.png">
+        <img class="headIcon" src="./assets/images/dogIcon.png" alt="An icon of a dog head">
         <nav class="navbar">
             <ul>
                 <li>
@@ -27,25 +27,31 @@
     </header>
 
     <main>
-        <section class="headerImg"></section><br> <!-- Header image with a line break after -->
+        <section class="headerImg" title="A cloudy night sky with stars shining through"></section><br><br><br>   <!-- Header image with a line break after -->
         <!-- Flex Row of About Me section -->
         <section class="flexRow"> 
             <h1 id="about-me" class="flexSmallItem">About Me</h1>
-            <p class="flexBigItem">My name is Matthew Rallo. I am doing a coding bootcamp and learning HTML, CSS, Javascript, and more. During this bootcamp I will build up my portfolio and learn as much as I can. By the end of this bootcamp I will build a full stack web application.</p>
+            <section class="flexBigItem"> 
+                <section class="flexAboutMe">
+                    <p>My name is Matthew Rallo. I am a Computer Science graduate of the University of Missouri St. Louis. I am doing a coding bootcamp and learning HTML, CSS, Javascript, and more. During this bootcamp I will build up my portfolio and learn as much as I can. By the end of this bootcamp I will build a full stack web application.</p>
+                    <img class="profilePhoto" src="./assets/images/profilePic.jpg" alt="A profile picture of your's truly">
+                </section>
+            </section>
         </section>
+        <br><br> <!-- line break used for styling -->      
 
         <!-- Flex Row of Projects Section -->
         <section class="flexRow">
             <section class="flexSmallItem">
                 <h1 id="projects">Projects</h1>
-                <p class="subtext">Click on any project to be redirected to a deployed application.</p> 
+                <p class="subtext">Click on any project to be redirected to a deployed application or a video.</p> 
             </section>
         
             <!-- All my Project Cards-->
             <section class="flexBigItem">
                 <section class="flexRow"> <!-- A flex row inside another flex row (the flex big item is a column which is a flex row) -->
                     <!-- Main Project Card-->
-                    <section class="projectFlexItem projectImgMain"> 
+                    <section class="projectFlexItem projectImgMain" title="A screenshot of the horiseon webpage"> 
                         <a href="https://rallomatt.github.io/horiseonCodeRefractor/" target="_blank">
                             <figure class="projectCardHeader">
                                 <h2>Code Refractor</h2>
@@ -55,7 +61,7 @@
                     </section>
 
                     <!-- Other Project Cards -->
-                    <section class="projectFlexItem projectImgOne"> <!-- FLEX BOX ITEM (Project Card) -->
+                    <section class="projectFlexItem projectImgOne" title="A screenshot of my first webpage"> <!-- FLEX BOX ITEM (Project Card) -->
                         <a href="https://rallomatt.github.io/ralloMattWebsite/" target="_blank">
                             <figure class="projectCardHeader">
                                 <h2>My First Website</h2>
@@ -64,7 +70,7 @@
                         </a>
                     </section>
 
-                    <section class="projectFlexItem projectImgTwo"> <!-- FLEX BOX ITEM (Project Card) -->
+                    <section class="projectFlexItem projectImgTwo" title="A screenshot of the minesweeper game I made in Java"> <!-- FLEX BOX ITEM (Project Card) -->
                         <a href="https://www.youtube.com/watch?v=mwOmtl85fHU" target="_blank">
                             <figure class="projectCardHeader">
                                 <h2>Minesweeper</h2>
@@ -73,7 +79,7 @@
                             </a>
                     </section>
 
-                    <section class="projectFlexItem projectImgThree"> <!-- FLEX BOX ITEM (Project Card) -->
+                    <section class="projectFlexItem projectImgThree" title="A screenshot of the strange game I made in Html 5 and Javascript"> <!-- FLEX BOX ITEM (Project Card) -->
                         <a href="strangeGame.html" target="_blank">
                             <figure class="projectCardHeader">
                                 <h2>A Pretty Strange Game</h2>
@@ -82,7 +88,7 @@
                         </a>
                     </section>
 
-                    <section class="projectFlexItem projectImgFour"> <!-- FLEX BOX ITEM (Project Card) -->
+                    <section class="projectFlexItem projectImgFour" title="A picture of a calculator next to a pen"> <!-- FLEX BOX ITEM (Project Card) -->
                         <a href="https://www.youtube.com/watch?v=I_sdS4xQtV4" target="_blank">
                             <figure class="projectCardHeader">
                                 <h2>Calculator</h2>

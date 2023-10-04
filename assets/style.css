@@ -18,6 +18,11 @@
     width: 50px;
 }
 
+.profilePhoto { /*Rounds out the profile picture. Also sets size (based on percentage of original photo) */
+    border-radius: 10px;
+    width: 228px;
+    height: 324px;
+}
 .subtext { /*text under Projects column */
     font-size: var(--descriptionFontSize);
 }
@@ -27,7 +32,6 @@
     width:100%;
     height:250px;
     border-radius: 0 0 20px 20px;
-
 }
 .contactInfo { /* Changes information on footer into flexbox and posistions nicely */
     display: flex; 
@@ -56,6 +60,17 @@
     border-left: var(--borderStyle);
 }
 
+.flexAboutMe { /* Class used for about me section */
+    display: flex;
+    flex-direction: row;
+    justify-content: ;
+    align-items: center;
+    flex: 0 0 60%;
+    padding: 20px;
+    padding-right: 58px;
+    margin: 20px;
+    gap: 50px;
+}
 
 /* Project Card Classes */
 
@@ -225,5 +240,8 @@ footer a:hover{
     }
     .projectFlexItem{
         width: 380px;
+    }
+    .flexAboutMe {
+        flex-direction: column;
     }
 }
