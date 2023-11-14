@@ -95,7 +95,7 @@
 
 /* Background image of each project (flex box) so I can have each project have an image of said project */
 .projectImgMain { /* My main project card. The eye catcher */
-    background-image: url('./images/horiseonCode.png');
+    background-image: url('./images/recipeBook.PNG');
     width: var(--projectImgSize);
     height: var(--projectImgSize);
 }
@@ -119,7 +119,7 @@
 }
 
 .projectImgFour { /* My side project card. */
-    background-image: url('./images/calculator.jpg');
+    background-image: url('./images/horiseonCode.png');
     width: var(--projectImgSize);
     height: var(--projectImgSize);
 }
